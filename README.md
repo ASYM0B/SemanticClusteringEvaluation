@@ -59,4 +59,46 @@ The complete matrix is available in the Manual Labeling folder.
 
 ## Asymo0b Clustering
 
+In the second phase, we apply hierarchical clustering to the same set of chatbots, switching between six linkage methods between the clusters (average, centroid, complete, single, median and weighted) and the distance threshold value chosen to form the clusters from 0.01 to 0.99 with 0.01 steps. The lower the threshold is, the higher is the amount of clusters. The following table shows a summary of the best clustering found by our method (method weighted with 0.97 of threshold), which yield 29 clusters having between 1 and 43 chatbots. Clusters have an average of 9.2 and a median of 15 elements, and there are 3 singleton clusters.
+
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-7zrl"></th>
+    <th class="tg-8d8j">Agglomerative<br>Clustering<br></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-7zrl">#Labels / #Clusters</td>
+    <td class="tg-8d8j">29</td>
+  </tr>
+  <tr>
+    <td class="tg-7zrl">Max labels per chatbot</td>
+    <td class="tg-8d8j">1</td>
+  </tr>
+  <tr>
+    <td class="tg-7zrl">#singleton cluster</td>
+    <td class="tg-8d8j">3</td>
+  </tr>
+  <tr>
+    <td class="tg-7zrl">Min elements</td>
+    <td class="tg-8d8j">1</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Max elements</td>
+    <td class="tg-baqh">43</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Avg. elements</td>
+    <td class="tg-baqh">9.2</td>
+  </tr>
+  <tr>
+    <td class="tg-7zrl">Median elements</td>
+    <td class="tg-8d8j">15</td>
+  </tr>
+</tbody>
+</table>
+
+Folder Asym0b Clustering contains an excel file for each method, with all the matrix for each value of the threshold. 
 
